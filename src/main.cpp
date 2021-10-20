@@ -1,7 +1,9 @@
-#include "glm/glm.hpp"
+#include <QApplication>
+#include <QWidget>
 
-int main(int argc, char* argv) {
-	glm::mat4 test = glm::mat4(1.0f);
-
-	return 0;
+int main(int argc, char** argv) {
+	QApplication app(argc, argv);
+	QWidget app_window;
+	app_window.show();
+	return app.exec();
 }
